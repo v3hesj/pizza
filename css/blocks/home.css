@@ -1,0 +1,115 @@
+.home {
+    position: relative;
+    min-height: 549px;
+}
+.home-content {
+    z-index: 2;
+    position: absolute;
+    padding-top: 164px;
+    padding-left: 116px;
+    max-width: 574px;
+}
+.home-heading {
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 74px;
+}
+.home-heading + * {
+    margin-top: 24px;
+}
+.home-text {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 58px;
+}
+.home-text + * {
+    margin-top: 36px;
+}
+.home-btn {
+    min-height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 182px;
+    background-color: #EC0000;
+    box-shadow: -10px 20px 40px rgba(236, 0, 0, 0.16);
+    color: #fff;
+    font-size: 24px;
+    font-weight: 500;
+    border-radius: 25px;
+    line-height: 29px;
+    font-style: normal;
+    transition: opacity 0.2s ease;
+}
+.home-btn:hover {
+    opacity: 0.8;
+    color: #fff;
+}
+
+
+
+.home-rectangle {
+    z-index: 1;
+    position: absolute;
+    width: 516px;
+    height: 549px;
+    right: 349px;
+    /* left: 575px; */
+    top: 0;
+
+    background: linear-gradient(270deg, #ffffff 24.6%, rgba(255, 255, 255, 0.94) 37.11%, rgba(255, 255, 255, 0.9) 46.89%, rgba(255, 255, 255, 0) 82.49%);
+    mix-blend-mode: normal;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.home-bg-img {
+   
+    position: absolute;
+    /*z-index: -1;*/
+    right: 0;
+    /* left: 664px; */
+    top: 0;
+    width: 776px;
+    height: 549px;
+    background-color: #fff;
+}
+
+.home-bg-img  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 865px) {
+    .home-rectangle {
+        left: 0;
+        width: 549px;
+    }
+    .home-content {
+        z-index: 2;
+        position: absolute;
+        padding-top: 120px;
+        padding-left: 50px;
+        max-width: 574px;
+    }
+    .home-heading {
+        font-size: 60px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 74px;
+    }
+    .home-text {
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 58px;
+    }
+}
+@media (max-width: 549px) {
+    .home-rectangle {
+        left: 0;
+        width: 100%;
+    }
+}

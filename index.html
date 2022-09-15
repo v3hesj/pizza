@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/blocks/header.css">
+    <link rel="stylesheet" href="./css/blocks/home.css">
+    <link rel="stylesheet" href="./css/blocks/recommended-menu.css">
+    <link rel="stylesheet" href="./css/blocks/mobile-nav-button.css">
+    <link rel="stylesheet" href="./css/blocks/mobile-nav.css">
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/base.css">
+    
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header_row">
+                <div class="header-logo">
+                    <a href="#"><img src="images\Logo.svg" alt="logo"></a>
+                </div>
+                <nav class="header-nav">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Menu</a></li>
+                        <li><a href="#">Promo</a></li>
+                    </ul>
+                </nav>
+                <div class="header-cart">
+                    <img src="images\imgSearch.png" alt="Search">
+                    <img src="images\imgCart.png" alt="Cart">
+                </div>
+                <div class="header-login">
+                    <a href="#">SING IN</a>
+                </div>
+                <button type="button" class="mobile-nav-button">
+                    <span class="mobile-nav-button__icon"></span>
+                </button>
+            </div>
+        </header>
+        
+        <div class="mobile-nav">
+            <img class="mobile-nav-logo" src="./images/Logo.svg" alt="logo">
+
+            <nav class="mobile-nav-list">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Promo</a></li>
+                </ul>
+            </nav>
+
+            <div class="mobile-login">
+                <a href="#">SING IN</a>
+            </div>
+
+        </div>
+
+        <main>
+            <section class="home">
+                <div class="home-content">
+                    <h1 class="home-heading">Friday pizza!</h1>
+                    <div class="home-text">
+                        <p>Time to enjoy our delicious pizza.</p>
+                    </div>
+                    <div class="home-btn">
+                        <a href="#" class="btn">ORDER NOW</a>
+                    </div>
+                </div>
+                <div class="home-bg-container">
+                    <div class="home-rectangle"></div>
+                    <div class="home-bg-img">
+                        <img src="./images/margherita-pizza 2.png" alt="background cover">
+                    </div>
+                </div>
+            </section>
+
+            <section class="recommended-menu">
+                <div class="menu-container">
+                    <div class="menu-header">
+                        <p class="menu-title">Recommended menu</p>
+                    </div>
+                    <div class="menu-option">
+                        <div class="menu-option-item1">
+                            <div class="menu-option__img"><img src="./images/cheese-pizza.png" alt="cheese-pizza"></div>
+                            <div class="menu-option__header">
+                                <h3 class="menu-option__header_head">Cheese Lovers</h3>
+                                <div class="menu-option__header_text">
+                                    <p>Combination of Alfredo sauce and two cheeses – Romano, and Parmesan.</p>
+                                </div>
+                            </div>
+                            <div class="menu-option__price">$20.00</div>
+                            <div class="menu-option__options"><img src="./images/options.png" alt="options"></div>
+                            <div class="menu-option__button">Add to cart</div>
+                        </div>
+                        <div class="menu-option-item1">
+                            <div class="menu-option__img"><img src="./images/pepperoni-pizza.png" alt="pepperoni-pizza"></div>
+                            <div class="menu-option__header">
+                                <h3 class="menu-option__header_head">Pepperoni Pizza</h3>
+                                <div class="menu-option__header_text">
+                                    <p>Pizza with homemade spicy beef sausage</p>
+                                </div>
+                            </div>
+                            <div class="menu-option__price">$25.00</div>
+                            <div class="menu-option__options"><img src="./images/options.png" alt="options"></div>
+                            <div class="menu-option__button">Add to cart</div>
+                        </div>
+                        <div class="menu-option-item1">
+                            <div class="menu-option__img"><img src="./images/margherita-pizza.png" alt="margherita-pizza"></div>
+                            <div class="menu-option__header">
+                                <h3 class="menu-option__header_head">Margherita Pizza</h3>
+                                <div class="menu-option__header_text">
+                                    <p>Made with San Marzano tomatoes, mozzarella cheese, and fresh basil.</p>
+                                </div>
+                            </div>
+                            <div class="menu-option__price">$35.00</div>
+                            <div class="menu-option__options"><img src="./images/options.png" alt="options"></div>
+                            <div class="menu-option__button">Add to cart</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+
+    </footer>
+    <script src="./css/js/main.js"></script>
+</body>
+</html>

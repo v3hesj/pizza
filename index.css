@@ -1,0 +1,51 @@
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    font-family: 'Fira Sans Condensed', sans-serif;
+    position: relative;
+
+
+    background: #F6ECEC;
+}
+.header {
+    display: flex;
+    
+    position: absolute;
+    width: 1440px;
+    height: 1440px;
+    top: 156px;
+
+    background: #FFFFFF;
+    border-radius: 60px;
+} 
+.container {
+    display: flex;
+    height: 100px;
+    align-items: center;
+}
+  
+.header__logo {
+    display: flex;
+}
