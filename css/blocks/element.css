@@ -1,0 +1,51 @@
+.element {
+    position: absolute;
+}
+.element-item1 {
+    position: relative;
+    left: 562px;
+    top: -40px;
+    width: 58px;
+    height: 70px;
+    transform: matrix(1, -0.05, -0.05, 1, 0, 0);
+}
+.element-item2 {
+    position: relative;
+    z-index: 55;
+    left: -150px;
+    top: 770px;
+    width: 138px;
+    height: 166px;
+    /* transform: rotate(93.63deg); */
+}
+.element-item3 {
+    position: relative;
+    z-index: 55;
+    left: 1250px;
+    top: 1370px;
+    width: 94px;
+    height: 114px;
+}
+.element-item4 {
+    position: relative;
+    z-index: 55;
+    left: 1094px;
+    top: 590px;
+    width: 131px;
+    height: 129px;
+}
+.element-item5 {
+    position: relative;
+    z-index: -1;
+    left: -550px;
+    top: 1291px;
+    width: 221px;
+    height: 216px;
+    filter: blur(4px);
+}
+
+@media (max-width: 1439px) {
+    .element {
+        display: none;
+    }
+}

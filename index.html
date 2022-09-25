@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="./css/blocks/recommended-menu.css">
     <link rel="stylesheet" href="./css/blocks/mobile-nav-button.css">
     <link rel="stylesheet" href="./css/blocks/mobile-nav.css">
+    <link rel="stylesheet" href="./css/blocks/element.css">
+    <link rel="stylesheet" href="./css/blocks/menu-option.css">
+    <link rel="stylesheet" href="./css/blocks/cart.css">
 
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/base.css">
@@ -20,6 +23,13 @@
 </head>
 <body>
     <div class="container">
+        <div class="element">
+            <img src="./images/leaves-bl.svg" alt="decor" class="element-item1">
+            <img src="./images/leaves.svg" alt="decor" class="element-item2">
+            <img src="./images/leaves.svg" alt="decor" class="element-item3">
+            <img src="./images/tomato.svg" alt="decor" class="element-item4">
+            <img src="./images/tomato.svg" alt="decor" class="element-item5">
+        </div>
         <header class="header">
             <div class="header_row">
                 <div class="header-logo">
@@ -34,7 +44,7 @@
                 </nav>
                 <div class="header-cart">
                     <img src="images\imgSearch.png" alt="Search">
-                    <img src="images\imgCart.png" alt="Cart">
+                    <img id="header-cart-id" src="images\imgCart.png" alt="Cart">
                 </div>
                 <div class="header-login">
                     <a href="#">SING IN</a>
@@ -59,7 +69,22 @@
             <div class="mobile-login">
                 <a href="#">SING IN</a>
             </div>
+        </div>
 
+        <div id="cart-nav" class="cart-nav">
+            <form action="" class="cart__modal-content cart__animate">
+                <div>
+                    <div class="cart__imgcontainer">
+                        <div onclick="closeCartWindow ()"class="cart__close" title="Закрыть Modal">&times;</div>
+                        <div>картинка</div>
+                        <div>название</div>
+                    </div>
+                    <div>количество</div>
+                    <div>цена</div>
+                </div>
+                <div>Всего</div>
+                <button>Заказать</button>
+            </form>
         </div>
 
         <main>
@@ -88,40 +113,87 @@
                     </div>
                     <div class="menu-option">
                         <div class="menu-option-item1">
-                            <div class="menu-option__img"><img src="./images/cheese-pizza.png" alt="cheese-pizza"></div>
+                            <div class="menu-option__img"><img id="menu-option__img__one" src="./images/cheese-pizza.png" alt="cheese-pizza"></div>
                             <div class="menu-option__header">
-                                <h3 class="menu-option__header_head">Cheese Lovers</h3>
+                                <h3 id="menu-option__header_head__one" class="menu-option__header_head">Cheese Lovers</h3>
                                 <div class="menu-option__header_text">
                                     <p>Combination of Alfredo sauce and two cheeses – Romano, and Parmesan.</p>
                                 </div>
                             </div>
-                            <div class="menu-option__price">$20.00</div>
-                            <div class="menu-option__options"><img src="./images/options.png" alt="options"></div>
-                            <div class="menu-option__button">Add to cart</div>
+                            <div id="menu-option__price_one" class="menu-option__price">$20.00</div>
+                            
+                            <div class="menu-option__dropdown">
+                                <button  onclick="myFunctionOne()" class="menu-option__dropbtn">
+                                    <div id="menu-option__input__one" class="menu-option_input">Small 24sm</div>
+                                    <div class="menu-option__arrow">
+                                        <img src="./images/arrow.svg" alt="arrow menu">
+                                    </div>
+                                </button>
+                                <div  id="myDropdown__one" class="menu-option__dropdown-content">
+                                    <button class="menu-option__size" value="$20.00">Small 24sm</button>
+                                    <button class="menu-option__size" value="$26.00">Medium 33sm</button>
+                                    <button class="menu-option__size" value="$32.00">Big 40sm</button>
+                                </div>
+                            </div>
+                            <div id="menu-option-one" class="menu-option__button">
+                                <div>Add to cart</div>
+                            </div>
                         </div>
+
                         <div class="menu-option-item1">
-                            <div class="menu-option__img"><img src="./images/pepperoni-pizza.png" alt="pepperoni-pizza"></div>
+                            <div class="menu-option__img"><img id="menu-option__img__two" src="./images/pepperoni-pizza.png" alt="pepperoni-pizza"></div>
                             <div class="menu-option__header">
-                                <h3 class="menu-option__header_head">Pepperoni Pizza</h3>
+                                <h3 id="menu-option__header_head__two" class="menu-option__header_head">Pepperoni Pizza</h3>
                                 <div class="menu-option__header_text">
                                     <p>Pizza with homemade spicy beef sausage</p>
                                 </div>
                             </div>
-                            <div class="menu-option__price">$25.00</div>
-                            <div class="menu-option__options"><img src="./images/options.png" alt="options"></div>
-                            <div class="menu-option__button">Add to cart</div>
+                            <div id="menu-option__price_two" class="menu-option__price">$25.00</div>
+
+                            <div class="menu-option__dropdown">
+                                <button  onclick="myFunctionTwo()" class="menu-option__dropbtn">
+                                    <div id="menu-option__input__two" class="menu-option_input">Small 24sm</div>
+                                    <div class="menu-option__arrow">
+                                        <img src="./images/arrow.svg" alt="arrow menu">
+                                    </div>
+                                </button>
+                                <div  id="myDropdown__two" class="menu-option__dropdown-content">
+                                    <button class="menu-option__size" value="$25.00">Small 24sm</button>
+                                    <button class="menu-option__size" value="$29.00">Medium 33sm</button>
+                                    <button class="menu-option__size" value="$37.00">Big 40sm</button>
+                                </div>
+                            </div>
+                            <div id="menu-option-two" class="menu-option__button">
+                                <div>Add to cart</div>
+                            </div>
                         </div>
+
                         <div class="menu-option-item1">
-                            <div class="menu-option__img"><img src="./images/margherita-pizza.png" alt="margherita-pizza"></div>
+                            <div class="menu-option__img"><img id="menu-option__img__three" src="./images/margherita-pizza.png" alt="margherita-pizza"></div>
                             <div class="menu-option__header">
-                                <h3 class="menu-option__header_head">Margherita Pizza</h3>
+                                <h3 id="menu-option__header_head__three" class="menu-option__header_head">Margherita Pizza</h3>
                                 <div class="menu-option__header_text">
                                     <p>Made with San Marzano tomatoes, mozzarella cheese, and fresh basil.</p>
                                 </div>
                             </div>
-                            <div class="menu-option__price">$35.00</div>
-                            <div class="menu-option__options"><img src="./images/options.png" alt="options"></div>
-                            <div class="menu-option__button">Add to cart</div>
+                            <div id="menu-option__price_three" class="menu-option__price">$35.00</div>
+
+                            <div class="menu-option__dropdown">
+                                <button  onclick="myFunctionThree()" class="menu-option__dropbtn">
+                                    <div id="menu-option__input__three" class="menu-option_input">Small 24sm</div>
+                                    <div class="menu-option__arrow">
+                                        <img src="./images/arrow.svg" alt="arrow menu">
+                                    </div>
+                                </button>
+                                <div  id="myDropdown__three" class="menu-option__dropdown-content">
+                                    <button class="menu-option__size" value="$35.00">Small 24sm</button>
+                                    <button class="menu-option__size" value="$42.00">Medium 33sm</button>
+                                    <button class="menu-option__size" value="$48.00">Big 40sm</button>
+                                </div>
+                            </div>
+                            <div id="menu-option-three" class="menu-option__button">
+                                <div>Add to cart</div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -132,6 +204,8 @@
     <footer>
 
     </footer>
-    <script src="./css/js/main.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/menu-pizza-size.js"></script>
+    <script src="./js/cart.js"></script>
 </body>
 </html>

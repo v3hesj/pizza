@@ -4,7 +4,7 @@ body {
     font-size: 16px;
     color:#00240F;
     background: #F6ECEC;
-    padding: 10px 10px 10px 10px;
+    padding: 50px 10px 10px 10px;
 
 }
 /* Utility */
@@ -25,6 +25,8 @@ body {
 }
 /* grig */
 .container {
+    /* position: absolute; */
+
     width: 1440px;
     height: 1440px;
     margin-left: auto;
